@@ -1,10 +1,9 @@
-<<template>
+<template>
   <div
-    class="border border-gray-200 p-3 text-gray-700 rounded-lg cursor-pointer hover:bg-slate-300"
-    :class="{'text-red-300': selected}"
+    class="border border-gray-200 p-3 rounded-lg cursor-pointer hover:bg-slate-300"
+    :class="[selected ? classFunction : 'text-gray-700']"
     @click="select"
-  >
-  {{name}}
+  >{{ name }}
   </div>
 </template>
 
@@ -13,10 +12,11 @@ export default {
   props: {
     name: String,
     selected: Boolean,
+    classFunction: String,
   },
   methods: {
     select() {
-      this.$emit('select-color', this.name)
+      this.$emit('select-color', this.name);
     }
   }
 }
