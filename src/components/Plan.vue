@@ -9,17 +9,12 @@
 <script>
 export default {
   props: {
-    name: String,
-    price: Number,
-  },
-  data() {
-    return {
-      selected: false
-    }
+    name: {type: String},
+    selected: {type: Boolean},
   },
   methods: {
     select() {
-      this.selected = true
+      this.$emit('select-plan', this.name)
     }
   }
 }

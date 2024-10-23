@@ -4,7 +4,8 @@
       <h2 class="subtitle">
         We travel the world to source the very best single origin coffee for you
       </h2>
-      <plan-picker></plan-picker>
+      <!-- <plan-picker></plan-picker> -->
+      <color-picker></color-picker>
     </div>
 </template>
 
