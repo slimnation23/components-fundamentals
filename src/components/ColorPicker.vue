@@ -12,7 +12,7 @@
 
     <div v-if="selectedColor">
       <h3>
-        Вибраний колір: <span :class="getColorClass(selectedColor)">{{ selectedColor }}</span>
+        Color is: <span :class="getColorClass(selectedColor)">{{ selectedColor }}</span>
       </h3>
     </div>
   </div>
