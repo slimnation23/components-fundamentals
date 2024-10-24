@@ -8,6 +8,9 @@ import ColorPicker from "./components/ColorPicker.vue";
 import ColorOption from "./components/ColorOption.vue";
 import SizePicker from "./components/SIzePicker.vue";
 import SizeOption from "./components/SizeOption.vue";
+import ProductVariantSelector from "./components/ProductVariantSelector.vue";
+import SelectSize from "./components/SelectSize.vue";
+import SelectColor from "./components/SelectColor.vue";
 
 createApp(App)
   .component("plan", Plan)
@@ -16,4 +19,7 @@ createApp(App)
   .component("color-option", ColorOption)
   .component("size-picker", SizePicker)
   .component("size-option", SizeOption)
+  .component("product-selector", ProductVariantSelector)
+  .component("select-size", SelectSize)
+  .component("select-color", SelectColor)
   .mount("#app");
